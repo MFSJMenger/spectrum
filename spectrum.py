@@ -271,7 +271,7 @@ class SpectralDataset:
         self.weights = weights
 
     def broaden(self, sigma, nsteps=100, *,
-                without_weights=False, bounds=None, broadening='gaussian', normalize=False):
+                without_weights=False, bounds=None, broadening='gaussian', normalize=None):
         """broaden dataset"""
         if without_weights is True:
             weights = None
